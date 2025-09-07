@@ -52,7 +52,7 @@ class Account {
     }
 }
 
-public class BankingApp {
+public class Banking {
     private static Account[] accounts = new Account[100];
     private static int accountCount = 0;
     private static int accountNumberSeed = 1001;
