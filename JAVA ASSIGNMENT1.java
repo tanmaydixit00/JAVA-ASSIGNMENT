@@ -7,7 +7,7 @@ public class Account {
     private String email;
     private String phoneNumber;
 
-    // Constructor
+
     public Account(int accountNumber, String accountHolderName, double balance, String email, String phoneNumber) {
         this.accountNumber = accountNumber;
         this.accountHolderName = accountHolderName;
@@ -16,7 +16,7 @@ public class Account {
         this.phoneNumber = phoneNumber;
     }
 
-    // Deposit money
+
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -26,7 +26,7 @@ public class Account {
         }
     }
 
-    // Withdraw money
+
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -36,7 +36,7 @@ public class Account {
         }
     }
 
-    // Display account details
+
     public void displayAccountDetails() {
         System.out.println("Account Number: " + accountNumber);
         System.out.println("Holder Name: " + accountHolderName);
@@ -45,7 +45,7 @@ public class Account {
         System.out.println("Phone: " + phoneNumber);
     }
 
-    // Update contact details
+    
     public void updateContactDetails(String email, String phoneNumber) {
         this.email = email;
         this.phoneNumber = phoneNumber;
